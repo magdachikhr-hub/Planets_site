@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import planetsData from "./data/data.json";
 import "./App.css";
+import About from "./pages/About";
+import { Route, Routes } from "react-router-dom";
+import AdminPanel from "./pages/AdminPanel";
 
 const getAssetUrl = (fileName) =>
   new URL(`./assets/${fileName}`, import.meta.url).href;
@@ -187,6 +190,11 @@ function App() {
             </div>
           ))}
         </section>
+
+        <Routes>
+          <Route path="/about" element={<About></About>}></Route>
+          <Route path="/admin" element={<AdminPanel></AdminPanel>}></Route>
+        </Routes>
       </main>
     </div>
   );

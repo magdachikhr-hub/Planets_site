@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin
+
+Sitemap: https://planets-site-five.vercel.app/sitemap.xml
