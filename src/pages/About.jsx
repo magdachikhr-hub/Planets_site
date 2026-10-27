@@ -8,5 +8,3 @@ function About() {
   }, []);
   return <h1>ჩვენ შესახებ</h1>;
 }
-
-export default About;
