@@ -4,6 +4,7 @@ import "./App.css";
 import About from "./pages/About";
 import { Route, Routes } from "react-router-dom";
 import AdminPanel from "./pages/AdminPanel";
+import Product from "./pages/Product";
 
 const getAssetUrl = (fileName) =>
   new URL(`./assets/${fileName}`, import.meta.url).href;
@@ -194,6 +195,7 @@ function App() {
         <Routes>
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/admin" element={<AdminPanel></AdminPanel>}></Route>
+          <Route path="/product" element={<Product></Product>}></Route>
         </Routes>
       </main>
     </div>
